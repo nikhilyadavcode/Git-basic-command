@@ -144,3 +144,52 @@ Stash
 Tag
 Upstream
 Working Directory
+
+                      ## 🔹 GitHub
+
+## 🔹 Summary of SSH Concepts and Commands
+
+`SSH key pair` - A public and private key for secure access
+`ssh-keygen` - Generate a new SSH key pair
+`ssh-add` - Add your private key to the SSH agent
+`ssh -T git@github.com` - Test SSH connection
+`ssh-add -l` - List loaded SSH keys
+`ssh-add -d` - Remove a key from agent
+
+## 🔹 Copy Your Public SSH Key
+On Windows (Git Bash):` clip < ~/.ssh/id_rsa.pub`
+On macOS: pbcopy <` ~/.ssh/id_rsa.pub`
+On Linux: cat `~/.ssh/id_rsa.pub (then copy manually)`
+
+## 🔹Key Pull Commands
+Fetch
+Merge
+Pull
+
+## 🔹Git Revert Commands and Options
+`git revert HEAD` - Revert the latest commit
+`git revert <commit>` - Revert a specific commit
+`git revert HEAD~2 `- Revert a commit further back in history
+`git revert --no-edit` - Skip commit message editor
+`git log --oneline `- Show commit history
+
+## 🔹 Git Reset Commands and Options
+`git reset --soft <commit>` - Move HEAD to commit, keep changes staged
+`git reset --mixed <commit>` - Move HEAD to commit, unstage changes (default)
+`git reset --hard <commit>` - Move HEAD to commit, discard all changes
+`git reset <file>` - Unstage a file
+`git log --oneline `- Show commit history
+
+## 🔹Git Rebase
+Use `git rebase -i` to edit, reorder, squash, or fix up commits before a certain point.
+
+Use `git rebase --continue` to continue a rebase after resolving conflicts.
+
+Use `git rebase --abort` to cancel a rebase in progress.
+
+
+## 🔹reflog
+Use `git reflog regularly` to keep track of your changes
+Use `git reflog `to recover lost commits or changes
+Use `git reflog expires` to clean up old entries
+
